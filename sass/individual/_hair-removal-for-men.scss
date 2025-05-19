@@ -1,0 +1,110 @@
+@use "../_setting" as s;
+
+body.page-template-page-hair-removal-for-men #wrapper{
+	.mainVisual.--typePageTitle01{
+		background:#d5e2eb;
+		@include s.media(m){
+			background:none;
+		}
+		&::before{
+			@include s.media(m){
+				background:#d5e2eb url(../img/hair-removal-for-men/bgMainVisual_l.png) repeat-x top center;
+				background-size:100% 100%;
+			}
+		}
+		&::after{
+			@include s.media(m){
+				background:#d5e2eb url(../img/hair-removal-for-men/bgMainVisual_r.png) repeat-x top center;
+				background-size:100% 100%;
+			}
+		}
+		.mainVisual__pageTitle h1{
+			color:#FFF;
+			border-color:s.$colorType11;
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight:500;
+			letter-spacing:0.1em;
+			@include s.media(m){
+				letter-spacing:0.2em;
+				border-color:#FFF;
+			}
+		}
+		.mainVisual__pageTitle small{
+			color:#000;
+			@include s.media(m){
+				color:#FFF;
+			}
+		}
+		.mainVisual__priceListButton a{
+			background-color:s.$colorType11;
+		}
+		.mainVisual__achievements b{
+			color:s.$colorType11;
+		}
+		.mainVisual__achievementList li{
+			border-color:s.$colorType11;
+			span{
+				color:s.$colorType11;
+			}
+		}
+	}
+	.pickUpBox{
+		background:#e8eff3;
+		&::before{
+			@include s.media(m){
+				background:#e8eff3;
+				box-shadow: 0.5em -0.5em #e8eff3;
+			}
+		}
+		.title--type01 h3{
+			color:s.$colorType11;
+		}
+		.button--type01 a{
+			background:s.$colorType11;
+			&:hover{
+				background:#2051b2;
+			}
+		}
+		.box--type01__inner{
+			background:#809ce1;
+			&::before{
+				@include s.media(m){
+					background:#809ce1;
+				}
+			}
+		}
+	}
+	.caseIntroductionBox{
+		@include s.media(m){
+			margin-bottom:8em;
+		}
+	}
+	.caseIntroductionBox__nameBox dt{
+		background:s.$colorType11;
+		color:#FFF;
+	}
+	.articleColumnBox__data li:nth-child(2) span{
+		background:s.$colorType11;
+		color:#FFF;
+	}
+	.pageFlowBox{
+		&__image::before{
+			border-color:s.$colorType11;
+		}
+		&__title{
+			color:s.$colorType11;
+		}
+	}
+	.questionBox{
+		@include s.media(m){
+			margin-bottom:8em;
+		}
+	}
+}
+
+
+
+
+
+
+

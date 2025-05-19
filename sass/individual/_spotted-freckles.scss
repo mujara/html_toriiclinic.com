@@ -1,0 +1,92 @@
+@use "../_setting" as s;
+
+body.page-template-page-spotted-freckles #wrapper{
+	.mainVisual.--typePageTitle01{
+		background:#fcd8d2;
+		@include s.media(m){
+			background:none;
+		}
+		&::before{
+			@include s.media(m){
+				background:#fcd8d2 url(../img/spotted-freckles/bgMainVisual_l.png) repeat-x top center;
+				background-size:100% 100%;
+			}
+		}
+		&::after{
+			@include s.media(m){
+				background:#fcd8d2 url(../img/spotted-freckles/bgMainVisual_r.png) repeat-x top center;
+				background-size:100% 100%;
+			}
+		}
+		.mainVisual__pageTitle{
+			h1{
+				border-color:#f98384;
+				@include s.media(m){
+					border-color:#fcd8d2;
+				}
+			}
+			small{
+				color:#ad9858;
+			}
+		}
+		.mainVisual__priceListButton a{
+			background-color:#f98384;
+		}
+		.mainVisual__achievements b{
+			color:s.$colorType08;
+		}
+		.mainVisual__achievementList li{
+			border-color:s.$colorType08;
+			span{
+				color:s.$colorType08;
+			}
+		}
+	}
+	.pickUpBox{
+		background:#fdf3f1;
+		&::before{
+			@include s.media(m){
+				background:#fdf3f1;
+				box-shadow: 0.5em -0.5em #fdf3f1;
+			}
+		}
+		.title--type01 h3{
+			color:s.$colorType08;
+		}
+		.button--type01 a{
+			background:s.$colorType08;
+			&:hover{
+				background:#d36d29;
+			}
+		}
+		.box--type01__inner{
+			background:#f99a9b;
+			&::before{
+				@include s.media(m){
+					background:#f99a9b;
+				}
+			}
+		}
+	}
+	.caseIntroductionBox__nameBox dt{
+		background:s.$colorType08;
+		color:#FFF;
+	}
+	.articleColumnBox__data li:nth-child(2) span{
+		background:s.$colorType08;
+		color:#FFF;
+	}
+	.pageFlowBox{
+		&__image::before{
+			border-color:s.$colorType08;
+		}
+		&__title{
+			color:s.$colorType08;
+		}
+	}
+	.questionBox{
+		@include s.media(m){
+			margin-bottom:8em;
+		}
+	}
+}

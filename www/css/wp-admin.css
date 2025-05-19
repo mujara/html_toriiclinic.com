@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*Cocoonのテーマを見えなくする*/
+.themes .theme[data-slug="cocoon-master"]{
+	display:none;
+}
+.theme-info .parent-theme{
+	display:none;
+}
+#wpadminbar #wp-admin-bar-wp-logo {
+   display:none;
+}
+
+.admin-settings h1{
+	display:none;
+}
+
+.admin-settings h1 + p{
+	display:none;
+}
+
+#footer-thankyou{
+	display:none;
+}

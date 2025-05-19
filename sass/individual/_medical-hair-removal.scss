@@ -1,0 +1,228 @@
+@use "../_setting" as s;
+
+body.page-template-page-medical-hair-removal #wrapper{
+	.mainVisual.--typePageTitle01{
+		background:#c5ebe1;
+		@include s.media(m){
+			background:none;
+		}
+		&::before{
+			@include s.media(m){
+				background:#c5ebe1 url(../img/medical-hair-removal/bgMainVisual_l.png) repeat-x top center;
+				background-size:100% 100%;
+			}
+		}
+		&::after{
+			@include s.media(m){
+				background:#c5ebe1 url(../img/medical-hair-removal/bgMainVisual_r.png) repeat-x top center;
+				background-size:100% 100%;
+			}
+		}
+		.mainVisual__pageTitle{
+			h1{
+				border-color:#4ebea5;
+			}
+			small{
+				color:#ad9858;
+			}
+		}
+		.mainVisual__priceListButton a{
+			background-color:s.$colorType06;
+		}
+		.mainVisual__achievements b{
+			color:s.$colorType06;
+		}
+		.mainVisual__achievementList li{
+			border-color:s.$colorType06;
+			span{
+				color:s.$colorType06;
+			}
+		}
+	}
+	.pickUpBox{
+		background:#ddf3ed;
+		&::before{
+			@include s.media(m){
+				background:#ddf3ed;
+				box-shadow: 0.5em -0.5em #ddf3ed;
+			}
+		}
+		.title--type01 h3{
+			color:s.$colorType06;
+		}
+		.button--type01 a{
+			background:#19ac8b;
+			&:hover{
+				background:#0e8e6d;
+			}
+		}
+		.box--type01__inner{
+			background:#49bda2;
+			&::before{
+				@include s.media(m){
+					background:#49bda2;
+				}
+			}
+		}
+	}
+	.caseIntroductionBox{
+		@include s.media(m){
+			margin-bottom:8em;
+		}
+	}
+	.caseIntroductionBox__nameBox dt{
+		background:#0e8e6d;
+		color:#FFF;
+	}
+	.articleColumnBox__data li:nth-child(2) span{
+		background:#0e8e6d;
+		color:#FFF;
+	}
+	.pageFlowBox{
+		&__image::before{
+			border-color:s.$colorType06;
+		}
+		&__title{
+			color:s.$colorType06;
+		}
+	}
+}
+
+
+.title--typeMedicalHairRemovalPoint{
+	display:block;
+	text-align:center;
+	margin-bottom:1em;
+	@include s.media(m){
+		margin-bottom:3em;
+	}
+	h3{
+		font-family: 'Noto Serif JP', serif;
+		font-weight:500;
+		letter-spacing:0.1em;
+		&:nth-child(1){
+			color:s.$colorType03;
+			font-size:1.1em;
+			@include s.media(m){
+				font-size:2.25em;
+			}
+			span{
+				color:#19aa89;
+				font-size:1.1em;
+				position:relative;
+				z-index:1;
+				&::before{
+					width:100%;
+					height:0.3em;
+					display:block;
+					background:#f2eee9;
+				    content: "";
+				    position: absolute;
+				    bottom: 0;
+				    left: 0;
+				    z-index:-1;
+				}
+				@include s.media(m){
+					font-size:1.16em;
+				}
+			}
+		}
+		&:nth-child(2){
+			color:#19aa89;
+			font-size:2em;
+			@include s.media(m){
+				font-size:4.5em;
+			}
+			small{
+				color:s.$colorType03;
+				font-size:0.7em;
+				@include s.media(m){
+					font-size:0.5em;
+				}
+			}
+		}
+	}
+}
+
+#wrapper .medicalHairRemovalPointBox{
+	display:block;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:3em;
+	@include s.media(m){
+		width:100%;
+		display:flex;
+		flex-direction:row-reverse;
+	}
+	&__image{
+		width:70%;
+		margin:0 auto 2em;
+		display:block;
+		@include s.media(m){
+			width:40%;
+			margin:auto;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__content{
+		display:block;
+		@include s.media(m){
+			width:60%;
+			padding-right:3em;
+		}
+		dl{
+			display:block;
+			margin-bottom:2em;
+			dt{
+				width:100%;
+				display:flex;
+				align-items:center;
+				margin-bottom:0.7em;
+				span{
+					width:s.em(60);
+					img{
+						width:100%;
+					}
+				}
+				p{
+					width:90%;
+					font-family: 'Noto Sans JP', sans-serif;
+					font-weight:200;
+					color:s.$colorType06;
+					font-size:1.1em;
+					padding-left:0.6em;
+					line-height:1.4;
+					@include s.media(m){
+						font-size:1.4em;
+					}
+				}
+			}
+		}
+	}
+}
+
+.medicalHairRemovalFeaturesBox{
+	display:block;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	@include s.media(m){
+		width:100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

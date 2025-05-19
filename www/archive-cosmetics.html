@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<!--グーグルフォント-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;800;900&family=Noto+Serif+JP:wght@300;500;700;900&family=Shippori+Mincho:wght@600&family=Zen+Kaku+Gothic+New:wght@400;500;900&display=swap" rel="stylesheet">
+
+<!--FONTPLUS フォントプラス-->
+<script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?gUwfYWZ-iOk%3D&box=OwXVs9EebzU%3D&aa=1&ab=2"></script>
+</head>
+
+<body class="post-type-archive-cosmetic tax-cosmetic_cat cosmetic_maker">
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+        
+		<div class="header__headBox">
+			<div class="header__siteTitleBox">
+				<div class="header__siteTitle"><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.png" alt="とりい皮膚科クリニック" /></a></div>
+				<div class="header__siteTitleInfo">
+					<div class="header__tel"><small>TEL</small><span>076-294-7881</span></div>
+					<ul class="header__contactButtonBox">
+						<li><a href="<?php echo home_url(); ?>/reservation">無料カウンセリング予約</a></li>
+						<li><a href="https://reservation.medical-force.com/c/288de90e1fbc430eb8b2549cdecaec0f">WEB予約</a></li>
+					<!-- /.header__contactButtonBox --></ul>
+				<!-- /.header__siteTitleInfo --></div>
+			<!-- /.header__siteTitleBox --></div>
+			
+			<div id="pageTopFix">
+
+				<nav class="globalNavi">
+					<ul class="globalNavi__menu__main clearfix inBase">
+						<li><a href="<?php echo home_url(); ?>/reason">当院が選ばれる理由</a></li>
+						<li><a href="<?php echo home_url(); ?>/menu">施術メニュー  <i class="fa fa-fw icon-angle-down"></i></a>
+							<div class="globalNavi__menu__sub">
+                            					<div class="inBase clearfix">
+									<ul>
+										<li><a href="<?php echo home_url(); ?>/medical-hair-removal">医療脱毛</a></li>
+										<li><a href="<?php echo home_url(); ?>/hair-removal-for-men">メンズ脱毛</a></li>
+										<li><a href="<?php echo home_url(); ?>/acne-care-for-pores">ニキビ・ニキビ跡・毛穴の開き</a></li>
+										<li><a href="<?php echo home_url(); ?>/sagging-wrinkles">たるみ・シワ</a></li>
+										<li><a href="<?php echo home_url(); ?>/spotted-freckles">シミ・肝斑・そばかす</a></li>
+										<li><a href="<?php echo home_url(); ?>/permanent-makeup">医療アートメイク</a></li>
+										<li><a href="<?php echo home_url(); ?>/injection-drip">美容注射・点滴</a></li>
+										<li><a href="<?php echo home_url(); ?>/vagina-looseness">膣を閉める・尿漏れ</a></li>
+										<li><a href="<?php echo home_url(); ?>/piercing-piercing">ピアスの穴あけ</a></li>
+										<li><a href="<?php echo home_url(); ?>/medical-supplements">メディカルサプリメント</a></li>
+										<li><a href="<?php echo home_url(); ?>/internal-medicine">内服薬</a></li>
+										<li><a href="<?php echo home_url(); ?>/medical-cosmetics">メディカルコスメ</a></li>
+									</ul>
+								<!-- /.inBase --></div>
+							<!-- /.globalNavi__menu__sub --></div>
+		            			</li>
+						<li><a href="<?php echo home_url(); ?>/case">症例紹介</a></li>
+						<li><a href="<?php echo home_url(); ?>/doctor">ドクター紹介</a></li>
+						<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+						<li><a href="<?php echo home_url(); ?>/clinic">クリニック案内</a></li>
+					</ul>
+			    <!-- /.globalNavi --></nav>
+
+			<!-- /#pageTopFix --></div>
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+
+									<p class="globalNaviSmall__title"><span><img src="img/common/siteTitle.png" alt="とりい皮膚科クリニック" /></span></p>
+									<p class="globalNaviSmall__address">〒921-8821 石川県野々市市白山町6-17</p>
+									<div class="globalNaviSmall__tel"><small>TEL</small><span>076-294-7881</span></div>
+
+									<div class="globalNaviSmall__menu__main">
+										<p><a href="<?php echo home_url(); ?>/reason">当院が選ばれる理由</a></p>
+
+				                        <!--項目ここから-->
+				                        <div class="accordion--globalNaviSmall">
+				                            <input type="checkbox" class="accordion--globalNaviSmall__check" id="accordion--globalNaviSmall__label001" />
+				                            <label for="accordion--globalNaviSmall__label001">施術メニュー</label>
+				                            <div class="accordion--globalNaviSmall__content">
+				                                <!--隠す中身ここから-->
+													<ul class="globalNaviSmall__menu__sub">
+														<li><a href="<?php echo home_url(); ?>/medical-hair-removal">医療脱毛</a></li>
+														<li><a href="<?php echo home_url(); ?>/hair-removal-for-men">メンズ脱毛</a></li>
+														<li><a href="<?php echo home_url(); ?>/acne-care-for-pores">ニキビ・ニキビ跡・毛穴の開き</a></li>
+														<li><a href="<?php echo home_url(); ?>/sagging-wrinkles">たるみ・シワ</a></li>
+														<li><a href="<?php echo home_url(); ?>/spotted-freckles">シミ・肝斑・そばかす</a></li>
+														<li><a href="<?php echo home_url(); ?>/permanent-makeup">医療アートメイク</a></li>
+														<li><a href="<?php echo home_url(); ?>/injection-drip">美容注射・点滴</a></li>
+														<li><a href="<?php echo home_url(); ?>/vagina-looseness">膣を閉める・尿漏れ</a></li>
+														<li><a href="<?php echo home_url(); ?>/piercing-piercing">ピアスの穴あけ</a></li>
+														<li><a href="<?php echo home_url(); ?>/medical-supplements">メディカルサプリメント</a></li>
+														<li><a href="<?php echo home_url(); ?>/internal-medicine">内服薬</a></li>
+														<li><a href="<?php echo home_url(); ?>/medical-cosmetics">メディカルコスメ</a></li>
+													</ul>
+				                                <!--隠す中身ここまで-->
+				                            <!--//.accordion--globalNaviSmall__content--></div>
+				                        <!--//.accordion--globalNaviSmall--></div>
+				                        <!--//項目ここまで-->
+
+										<p><a href="<?php echo home_url(); ?>/case">症例紹介</a></p>
+										<p><a href="<?php echo home_url(); ?>/doctor">ドクター紹介</a></p>
+										<p><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></p>
+										<p><a href="<?php echo home_url(); ?>/clinic">クリニック案内</a></p>
+									</div>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+
+		    <!-- /.globalNaviSmall --></nav>
+        <!-- /.header__headBox --></div>
+	<!-- /#header --></header>
+    
+	<div class="pageTitleBox sM-s">
+		<div class="pageTitle">
+			<div class="inBase clearfix"><div class="page__inner">
+				<h1>メディカルコスメ　商品紹介</h1>
+			<!-- /.page__inner --></div><!-- /.inBase --></div>
+		<!-- /.pageTitle --></div>
+	<!-- /.pageTitleBox --></div>
+	
+<div id="contents" class="clearfix">
+    <div class="contentBox">
+		<div class="inBase clearfix">
+            <div class="pageBox sM">
+				<div class="topicpath sM">
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="<?php echo home_url(); ?>/medical-cosmetics">メディカルコスメ</a></li>
+						<li>メディカルコスメ　商品紹介</li>
+					</ul>
+				<!-- /.topicpath --></div>
+
+            	<div class="contentBox__inner --typeScrollFix">
+
+
+
+
+
+				<div class="categoryNavi sM">
+				<div class="--typeScrollFix__subject">
+
+		                    <div class="accordionBox--type01">
+		                        <!--項目ここから-->
+		                        <div class="accordion--type01 categoryNavi sM">
+		                            <input type="checkbox" class="accordion--type01__check" id="accordion--type01__label001" />
+		                            <label class="categoryNavi__title" for="accordion--type01__label001"><span>商品カテゴリー一覧</span></label>
+		                            <div class="accordion--type01__content">
+		                                <!--隠す中身ここから-->
+						<div class="allItemButton"><a href="<?php echo home_url(); ?>/medical-cosmetics">全ての商品</a></div>
+						<dl>
+							<dt><i class="fa fa-fw icon-gift"></i>商品カテゴリから</dt>
+							<dd>
+								<ul>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-serum">美容液</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-cleansing">洗顔・クレンジング</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-lotion">化粧水・保湿ジェル</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-moisturizer">保湿剤</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-haircare">ヘアーケア</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-bodycare">ボディケア</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-toner">トナー</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-toner">日焼け止め</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-eyecream">目元美容液</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-makeup">メイク</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-etcetra">その他</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><i class="fa fa-fw icon-building-o"></i>メーカーから</dt>
+							<dd>
+								<ul>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-zoskinhealth">ZO SKIN HEALTH<small>（ゼオスキンヘルス）</small></a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-environ">ENVIRON</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-revision">REVISION</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-plusrestore">PLUS RESTORE</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-mdear">MDEAR</a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-berutifulskin">berutifulskin<small>（ビューティフルスキン）</small></a></li>
+									<li><a href="<?php echo home_url(); ?>/cosmetics-moyu">MOYU</a></li>
+								</ul>
+							</dd>
+						</dl>
+
+		                                <!--隠す中身ここまで-->
+		                            <!--//.accordion--type01__content--></div>
+		                        <!--//.accordion--type01--></div>
+		                        <!--//項目ここまで-->
+		                    <!--//.accordionBox--></div>
+
+				<!-- /.--typeScrollFix__subject --></div>
+				<!-- /.categoryNavi --></div>
+
+
+
+					<div id="list" class="list ect-entry-card front-page-type-index">
+						<div class="list__title"><h1>全てのメディカルコスメ商品</h1></div>
+
+				        	<div class="cosmeticItemBox"><a href="#">
+							<div class="cosmeticItemBox__title"><h3>商品タイトル商品タイトル商品タイトル</h3></div>
+
+							<div class="cosmeticItemBox__inner">
+								<figure class="cosmeticItemBox__image"><img src="img/sample/sampleItem.png" alt="メディカルコスメ商品" /></figure>
+								<div class="cosmeticItemBox__content">
+									<table>
+										<tr>
+											<th>メーカー</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>商品</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>種類</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>特徴</th>
+											<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+										</tr>
+									</table>
+								<!-- /.cosmeticItemBox__content --></div>
+							<!-- /.cosmeticItemBox__inner --></div>
+				        	</a><!-- /.cosmeticItemBox --></div>
+
+
+				        	<div class="cosmeticItemBox"><a href="#">
+							<div class="cosmeticItemBox__title"><h3>商品タイトル商品タイトル商品タイトル</h3></div>
+
+							<div class="cosmeticItemBox__inner">
+								<figure class="cosmeticItemBox__image"><img src="img/sample/sampleItem.png" alt="メディカルコスメ商品" /></figure>
+								<div class="cosmeticItemBox__content">
+									<table>
+										<tr>
+											<th>メーカー</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>商品</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>種類</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>特徴</th>
+											<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+										</tr>
+									</table>
+								<!-- /.cosmeticItemBox__content --></div>
+							<!-- /.cosmeticItemBox__inner --></div>
+				        	</a><!-- /.cosmeticItemBox --></div>
+
+
+				        	<div class="cosmeticItemBox"><a href="#">
+							<div class="cosmeticItemBox__title"><h3>商品タイトル商品タイトル商品タイトル</h3></div>
+
+							<div class="cosmeticItemBox__inner">
+								<figure class="cosmeticItemBox__image"><img src="img/sample/sampleItem.png" alt="メディカルコスメ商品" /></figure>
+								<div class="cosmeticItemBox__content">
+									<table>
+										<tr>
+											<th>メーカー</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>商品</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>種類</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>特徴</th>
+											<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+										</tr>
+									</table>
+								<!-- /.cosmeticItemBox__content --></div>
+							<!-- /.cosmeticItemBox__inner --></div>
+				        	</a><!-- /.cosmeticItemBox --></div>
+
+
+				        	<div class="cosmeticItemBox"><a href="#">
+							<div class="cosmeticItemBox__title"><h3>商品タイトル商品タイトル商品タイトル</h3></div>
+
+							<div class="cosmeticItemBox__inner">
+								<figure class="cosmeticItemBox__image"><img src="img/sample/sampleItem.png" alt="メディカルコスメ商品" /></figure>
+								<div class="cosmeticItemBox__content">
+									<table>
+										<tr>
+											<th>メーカー</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>商品</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>種類</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>特徴</th>
+											<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+										</tr>
+									</table>
+								<!-- /.cosmeticItemBox__content --></div>
+							<!-- /.cosmeticItemBox__inner --></div>
+				        	</a><!-- /.cosmeticItemBox --></div>
+
+
+				        	<div class="cosmeticItemBox"><a href="#">
+							<div class="cosmeticItemBox__title"><h3>商品タイトル商品タイトル商品タイトル</h3></div>
+
+							<div class="cosmeticItemBox__inner">
+								<figure class="cosmeticItemBox__image"><img src="img/sample/sampleItem.png" alt="メディカルコスメ商品" /></figure>
+								<div class="cosmeticItemBox__content">
+									<table>
+										<tr>
+											<th>メーカー</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>商品</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>種類</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>特徴</th>
+											<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+										</tr>
+									</table>
+								<!-- /.cosmeticItemBox__content --></div>
+							<!-- /.cosmeticItemBox__inner --></div>
+				        	</a><!-- /.cosmeticItemBox --></div>
+
+
+				        	<div class="cosmeticItemBox"><a href="#">
+							<div class="cosmeticItemBox__title"><h3>商品タイトル商品タイトル商品タイトル</h3></div>
+
+							<div class="cosmeticItemBox__inner">
+								<figure class="cosmeticItemBox__image"><img src="img/sample/sampleItem.png" alt="メディカルコスメ商品" /></figure>
+								<div class="cosmeticItemBox__content">
+									<table>
+										<tr>
+											<th>メーカー</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>商品</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>種類</th>
+											<td>テキストテキスト</td>
+										</tr>
+										<tr>
+											<th>特徴</th>
+											<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+										</tr>
+									</table>
+								<!-- /.cosmeticItemBox__content --></div>
+							<!-- /.cosmeticItemBox__inner --></div>
+				        	</a><!-- /.cosmeticItemBox --></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- .list --></div>
+
+
+
+
+				<!-- /.contentBox__inner --></div>
+		<!-- /.inBase --></div>
+
+	<!-- /.contentBox --></div>
+
+<!-- /#contents --></div>
+
+
+
+	
+	<footer id="footer">
+		<div class="footerReservationBox">
+			<figure class="footerReservationBox__bg"><img src="img/common/bgReservation.png" alt="無料カウンセリング予約" /></figure>
+			<div class="footerReservationBox__inner">
+				<h3 class="footerReservationBox__title">無料カウンセリング予約</h3>
+				<p>些細なことでもお気軽にご相談ください。</p>
+				<div class="footerReservationBox__contact">
+					<div class="footerReservationBox__telBox">
+						<p>電話でのお問い合わせはこちら</p>
+						<div class="footerReservationBox__tel"><small>TEL</small><span>076-294-7881</span></div>
+					<!-- /.footerReservationBox__tel --></div>
+					<div class="footerReservationBox__mailBox">
+						<a href="https://reservation.medical-force.com/c/288de90e1fbc430eb8b2549cdecaec0f"><i class="fa fa-fw icon-envelope"></i> 無料カウンセリング予約</a>
+					<!-- /.footerReservationBox__mailBox --></div>
+				<!-- /.footerReservationBox__contact --></div>
+			<!-- /.footerReservationBox__inner --></div>
+		<!-- /.footerReservationBox --></div>
+
+		<div class="footer__bg">
+			<div class="inBase clearfix">
+				<div class="footerCompanyBox">
+					<h3 class="footerCompanyBox__title"><span><img src="img/common/siteTitle.png" alt="とりい皮膚科クリニック" /></span></h3>
+					<p>〒921-8821 石川県野々市市白山町6-17</p>
+					<div class="footerCompanyBox__businessHours">
+						<div class="footerCompanyBox__timeTable">
+							<table>
+								<tr>
+									<th></th>
+									<td>月</td>
+									<td>火</td>
+									<td>水</td>
+									<td>木</td>
+									<td>金</td>
+									<td>土</td>
+									<td>日</td>
+								</tr>
+								<tr>
+									<th>9:00-12:00</th>
+									<td><i class="fa fa-fw icon-circle"></i></td>
+									<td><i class="fa fa-fw icon-circle"></i></td>
+									<td><i class="fa fa-fw icon-circle"></i></td>
+									<td><i class="fa fa-fw icon-circle"></i></td>
+									<td><i class="fa fa-fw icon-circle"></i></td>
+									<td><i class="fa fa-fw icon-circle"></i></td>
+									<td>&#8722;</td>
+								</tr>
+								<tr>
+									<th>14:30-18:00</th>
+									<td><i class="fa fa-fw icon-circle"></i></td>
+									<td><i class="fa fa-fw icon-circle"></i></td>
+									<td><i class="fa fa-fw icon-circle"></i></td>
+									<td>&#8722;</td>
+									<td><i class="fa fa-fw icon-circle"></i></td>
+									<td>&#8722;</td>
+									<td>&#8722;</td>
+								</tr>
+							</table>
+						<!-- /.footerCompanyBox__timeTable --></div>
+						<dl class="footerCompanyBox__aboutClosed">
+							<dt>受付時間・休診日について</dt>
+							<dd>・休診日は日曜祝日、午後休診は木曜土曜です<br>
+								・木曜は1F（保険診療）が手術日になります<br>
+								　受付は2F（美容皮膚科・エステ）のみになりますのでご了承ください<br>
+								・臨時休診や長期休診は、お知らせにてアナウンスしております</dd>
+						</dl>
+					<!-- /.footerCompanyBox__businessHours --></div>
+
+					<div class="footerCompanyBox__imageBox">
+						<figure><img src="img/common/imgCompany.jpg" alt="とりい皮膚科クリニック" /></figure>
+						<ul class="footerCompanyBox__socialButton">
+							<li><a href="#"><span><img src="img/common/imgInstagram.png" alt="Instagram" /></span><span>Instagram</span></a></li>
+							<li><a href="#"><span><img src="img/common/imgLINE.png" alt="LINE" /></span><span>LINE</span></a></li>
+						</ul>
+					<!-- /.footerCompanyBox__imageBox --></div>
+				<!-- /.footerCompanyBox --></div>
+	    	<!-- /.inBase --></div>
+	    <!-- /.footer__bg --></div>
+
+		<div class="inBase clearfix">
+			<div class="footerMapBox">
+				<div class="googleMapBox">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1603.0480995292767!2d136.61194663682272!3d36.527673472326164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff835bfa459e8e1%3A0xe33a7938222f87a5!2z44CSOTIxLTg4MjEg55-z5bed55yM6YeO44CF5biC5biC55m95bGx55S677yW4oiS77yR77yX!5e0!3m2!1sja!2sjp!4v1698987785957!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			<!-- /.footerMapBox --></div>
+    	<!-- /.inBase --></div>
+
+
+		<div class="footer__bg02">
+			<div class="inBase clearfix">
+				<div class="footerNaviBox">
+					<div class="footerNaviBox__inner">
+						<p class="footerNaviBox__title">総合案内</p>
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/reason">当院が選ばれる理由</a></li>
+							<li><a href="<?php echo home_url(); ?>/case">症例紹介</a></li>
+							<li><a href="<?php echo home_url(); ?>/doctor">ドクター紹介</a></li>
+							<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+							<li><a href="<?php echo home_url(); ?>/clinic">クリニック案内</a></li>
+						</ul>
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/price">料金表</a></li>
+							<li><a href="<?php echo home_url(); ?>/column">美容コラム</a></li>
+							<li><a href="<?php echo home_url(); ?>/news">クリニックからのお知らせ</a></li>
+							<li><a href="<?php echo home_url(); ?>/reservation">無料カウンセリング予約</a></li>
+							<li><a href="<?php echo home_url(); ?>/privacy-policy">プライバシーポリシー</a></li>
+						</ul>
+					<!-- /.footerNaviBox__inner --></div>
+					<div class="footerNaviBox__inner">
+						<p class="footerNaviBox__title">施術メニュー</p>
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/medical-hair-removal">医療脱毛</a></li>
+							<li><a href="<?php echo home_url(); ?>/hair-removal-for-men">メンズ脱毛</a></li>
+							<li><a href="<?php echo home_url(); ?>/acne-care-for-pores">シミ・肝斑・そばかす</a></li>
+							<li><a href="<?php echo home_url(); ?>/sagging-wrinkles">たるみ・シワ</a></li>
+							<li><a href="<?php echo home_url(); ?>/acne-care-for-pores">ニキビ・ニキビ跡・毛穴の開き</a></li>
+							<li><a href="<?php echo home_url(); ?>/permanent-makeup">医療アートメイク</a></li>
+						</ul>
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/injection-drip">美容注射・点滴</a></li>
+							<li><a href="<?php echo home_url(); ?>/vagina-looseness">膣を閉める・尿漏れ</a></li>
+							<li><a href="<?php echo home_url(); ?>/piercing-piercing">ピアスの穴あけ</a></li>
+							<li><a href="<?php echo home_url(); ?>/medical-supplements">メディカルサプリメント</a></li>
+							<li><a href="<?php echo home_url(); ?>/internal-medicine">内服液</a></li>
+							<li><a href="<?php echo home_url(); ?>/medical-cosmetics">メディカルコスメ</a></li>
+						</ul>
+					<!-- /.footerNaviBox__inner --></div>
+				<!-- /.footerNaviBox --></div>
+	    	<!-- /.inBase --></div>
+    	<!-- /.footer__bg02 --></div>
+
+
+	<small class="copyright">Copyright &copy; とりい皮膚科クリニック. All Rights Reserved.</small>
+
+	<!-- /#footer --></footer>
+        
+	<div id="btnRise"><a href="#wrapper"><figure><img src="img/common/btnRise.svg" alt="ページ上部に戻る" /></figure><span>ページ上部に戻る</span></a></div>
+	  
+	<div id="btnTelEmpty"></div>
+    
+	    <div id="btnPageBottom">
+	        <div class="btnPageBottom--btn btnPageBottom--type01">
+	        	<div class="btnPageBottom--type01__inner">
+		            <a class="clearfix" href="https://reservation.medical-force.com/c/288de90e1fbc430eb8b2549cdecaec0f">
+		                <p class="btnPageBottom--type01__btnSent">カウンセリング</p>
+		            </a>
+		            <a class="clearfix" href="https://reservation.medical-force.com/c/288de90e1fbc430eb8b2549cdecaec0f">
+		                <p class="btnPageBottom--type01__btnSent">WEB予約</p>
+		            </a>
+		            <a class="clearfix" href="tel:0762947881">
+		                <p class="btnPageBottom--type01__btnSent">TEL</p>
+		            </a>
+	            <!-- /.btnPageBottom--type01__inner --></div>
+	        <!-- /.btnPageBottom--btn --></div>
+	    <!-- /#btnPageBottom --></div>
+
+    <div class="sideBannerBox">
+    	<div class="sideBannerBox__banner --type01"><a href="#">
+    		<span class="sideBannerBox__head">無料</span>
+    		<p class="sideBannerBox__content">カウンセリング<br>予約</p>
+    	</a><!-- /.sideBanner --></div>
+    	<div class="sideBannerBox__banner --type02"><a href="#">
+    		<span class="sideBannerBox__head">院長著</span>
+    		<p class="sideBannerBox__content"><small>正しい治療法とセルフケアの仕方</small><span>ニキビは皮膚科で治す</span></p>
+    		<figure><img src="img/common/imgSideBook.png" alt="ニキビは皮膚科で治す" /></figure>
+    	</a><!-- /.sideBanner --></div>
+    <!-- /.sideBannerBox --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>

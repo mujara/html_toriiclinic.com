@@ -1,0 +1,87 @@
+@use "../_setting" as s;
+
+body.page-template-page-acne-care-for-pores #wrapper{
+	.mainVisual.--typePageTitle01{
+		background:#f2eee9;
+		@include s.media(m){
+			background:none;
+		}
+		&::before{
+			@include s.media(m){
+				background:#f2eee9 url(../img/acne-care-for-pores/bgMainVisual_l.png) repeat-x top center;
+				background-size:100% 100%;
+			}
+		}
+		&::after{
+			@include s.media(m){
+				background:#f2eee9 url(../img/acne-care-for-pores/bgMainVisual_r.png) repeat-x top center;
+				background-size:100% 100%;
+			}
+		}
+		.mainVisual__pageTitle{
+			h1{
+				border-color:#e8956c;
+			}
+			small{
+				color:#ad9858;
+			}
+		}
+	}
+	.pickUpBox{
+		background:#fef4e8;
+		&::before{
+			@include s.media(m){
+				background:#fef4e8;
+				box-shadow: 0.5em -0.5em #fef4e8;
+			}
+		}
+		.title--type01 h3{
+			color:s.$colorType09;
+		}
+		.button--type01 a{
+			background:s.$colorType09;
+			&:hover{
+				background:#d36d29;
+			}
+		}
+		.box--type01__inner{
+			background:#f4a466;
+			&::before{
+				@include s.media(m){
+					background:#f4a466;
+				}
+			}
+		}
+	}
+	.caseIntroductionBox{
+		@include s.media(m){
+			margin-bottom:8em;
+		}
+	}
+	.bannerPriceList{
+		@include s.media(m){
+			margin-bottom:6em;
+		}
+	}
+	.caseIntroductionBox__nameBox dt{
+		background:s.$colorType09;
+		color:#FFF;
+	}
+	.articleColumnBox__data li:nth-child(2) span{
+		background:s.$colorType09;
+		color:#FFF;
+	}
+	.pageFlowBox{
+		&__image::before{
+			border-color:s.$colorType09;
+		}
+		&__title{
+			color:s.$colorType09;
+		}
+	}
+	.questionBox{
+		@include s.media(m){
+			margin-bottom:8em;
+		}
+	}
+}

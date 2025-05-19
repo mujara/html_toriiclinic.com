@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+// ==================================
+//　サイトの基本設定　変数
+// ==================================
+
+// 色関係の設定 -----------------------
+	$colorType01: #FFF;	//ベースカラー
+	$colorType02: #f2efea;	//メインカラー クリーム色
+	$colorType03: #214b63;	//アクセントカラー 紺色
+	$colorType04: #ae9958;	//アクセントカラー2 黄土色
+	$colorType05: #e28691;	//強調 ピンク色
+	$colorType06: #19ac8b;	//ページ色 医療脱毛 緑色　
+	$colorType07: #c6b689;	//ページ色 総合 ゴールド 
+	$colorType08: #f98384;	//ページ色 しみそばかす ピンク
+	$colorType09: #f18f4d;	//ページ色 ニキビ オレンジ
+	$colorType10: #995ad4;	//ページ色 メイク むらさき
+	$colorType11: #3966d3;	//ページ色 メンズ ブルー
+
+	$color-link: #ae9958;	//リンクカラー
+	$color-link-l: #dbd1b6;	//リンクカラー薄い
+	$color-link-d: #7a6116;	//リンクカラー濃い
+
+// フォント関係の設定 -----------------------
+	$sansSerif: "メイリオ","Meiryo","ＭＳ Ｐゴシック","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",sans-serif;
+	$serif: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+// 余白設定 -----------------------
+	$spaceSize: 1.8rem;
+
+// ブレイクポイント -----------------------
+	$breakpoints: (
+		xs:"print, screen and (min-width: 321px)",
+		s:"print, screen and (min-width: 576px)",
+		m:"print, screen and (min-width: 768px)",
+		l:"print, screen and (min-width: 992px)",
+		xl:"print, screen and (min-width: 1200px)",
+	);
+	@mixin media($breakpoint){
+		@media #{map-get($breakpoints,$breakpoint)}{
+			@content;
+		}
+	}
+
+// z-index 設定 -----------------------
+	$layer: (
+		modal: 999,
+		header: 20,
+		tooltip: 10,
+		default: 1
+	);
+
+// px→em サイズ調整 16でわる-----------------------
+	@function em($px, $base: 16) {
+		$value: $px;
+		$value: calc($px/$base) * 1em;
+		@return $value;
+	}
+
+// ページ個別設定 -----------------------
+	$pageNameList: company, contact;

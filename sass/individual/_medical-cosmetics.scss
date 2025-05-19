@@ -1,0 +1,369 @@
+@use "../_setting" as s;
+
+body.page-template-page-medical-cosmetics #wrapper{
+	.mainVisual.--typePageTitle01{
+		background:s.$colorType02;
+		@include s.media(m){
+			background:none;
+		}
+		&::before{
+			@include s.media(m){
+				background:#d5e2eb url(../img/medical-cosmetics/bgMainVisual_l.png) repeat-x top center;
+				background-size:100% 100%;
+			}
+		}
+		&::after{
+			@include s.media(m){
+				background:#d5e2eb url(../img/medical-cosmetics/bgMainVisual_r.png) repeat-x top center;
+				background-size:100% 100%;
+			}
+		}
+		.mainVisual__pageTitle{
+			h1{
+				border-color:#947e38;
+			}
+			small{
+				color:#ad9858;
+				@include s.media(m){
+					color:#FFF;
+				}
+			}
+		}
+	}
+	.pickUpBox{
+		background:s.$colorType02;
+		&::before{
+			@include s.media(m){
+				background:s.$colorType02;
+				box-shadow: 0.5em -0.5em s.$colorType02;
+			}
+		}
+		.title--type01 h3{
+			color:s.$colorType03;
+		}
+		.button--type01 a{
+			background:s.$colorType04;
+			&:hover{
+				background:s.$color-link-d;
+			}
+		}
+		.box--type01__inner{
+			background:#dad1b6;
+			&::before{
+				@include s.media(m){
+					background:#dad1b6;
+				}
+			}
+		}
+	}
+	.caseIntroductionBox__nameBox dt{
+		background:s.$colorType04;
+		//color:#FFF;
+	}
+	.articleColumnBox__data li:nth-child(2) span{
+		background:s.$colorType04;
+		//color:#FFF;
+	}
+	.pageFlowBox{
+		&__image::before{
+			//border-color:s.$colorType10;
+		}
+		&__title{
+			//color:s.$colorType10;
+		}
+	}
+}
+
+#wrapper .productCategoryBox{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	position:relative;
+	&::before{
+		display:block;
+		width:22em;
+		height:20em;
+		content:" ";
+		background:url(../img/common/imgFeather.png) no-repeat center top;
+		background-size:100% auto;
+		position:absolute;
+		top:3em;
+		left:-13em;
+		transform: rotate(36deg);
+		opacity:.5;
+		z-index:-1;
+		@include s.media(m){
+			width:s.em(469);
+			height:s.em(307);
+			top:9em;
+			left:-23em;
+			opacity:1;
+		}
+	}
+	&::after{
+		display:block;
+		width:22em;
+		height:20em;
+		content:" ";
+		background:url(../img/common/imgFeather.png) no-repeat center top;
+		background-size:100% auto;
+		position:absolute;
+		top:-9em;
+		right:-8em;
+		transform: scale(-1, 1) rotate(-100deg);
+		z-index:-1;
+		opacity:.5;
+		@include s.media(m){
+			width:s.em(469);
+			height:s.em(307);
+			top:-4em;
+			right:-13em;
+			opacity:1;
+		}
+	}
+	&__inner{
+		width:50%;
+		padding:0 1em;
+		margin-bottom:1.5em;
+		@include s.media(m){
+			padding:0 2em;
+			margin-bottom:3em;
+			width:33.3%;
+		}
+		a{
+			display:block;
+			opacity:1;
+			&:hover{
+				opacity:.5;
+			}
+		}
+		&:nth-child(5){
+			position:relative;
+			&::before{
+				display:block;
+				width:22em;
+				height:20em;
+				content:" ";
+				background:url(../img/common/imgFeather.png) no-repeat center top;
+				background-size:100% auto;
+				position:absolute;
+				top:3em;
+				left:-13em;
+				transform: rotate(200deg);
+				opacity:.5;
+				z-index:-1;
+				@include s.media(m){
+					width:s.em(469);
+					height:s.em(307);
+					top:-5em;
+					left:1.5em;
+					opacity:1;
+				}
+			}
+		}
+		&:nth-child(7){
+			position:relative;
+			&::before{
+				display:block;
+				width:22em;
+				height:20em;
+				content:" ";
+				background:url(../img/common/imgFeather.png) no-repeat center top;
+				background-size:100% auto;
+				position:absolute;
+				bottom:-2em;
+				left:-15em;
+				transform: scale(1, -1) rotate(170deg);
+				z-index:-1;
+				opacity:.5;
+				@include s.media(m){
+					width:s.em(469);
+					height:s.em(307);
+					bottom:-6em;
+					left:-15em;
+					opacity:1;
+				}
+			}
+		}
+		&:nth-child(9){
+			position:relative;
+			&::after{
+				display:block;
+				width:22em;
+				height:20em;
+				content:" ";
+				background:url(../img/common/imgFeather.png) no-repeat center top;
+				background-size:100% auto;
+				position:absolute;
+				top:-3em;
+				right:-15em;
+				transform: scale(1, -1) rotate(-130deg);
+				z-index:-1;
+				opacity:.5;
+				@include s.media(m){
+					width:s.em(469);
+					height:s.em(307);
+					top:-3em;
+					right:-20em;
+					opacity:1;
+				}
+			}
+		}
+	}
+	&__image{
+		background:#FFF;
+		display:block;
+		padding:1.5em;
+		border:s.$colorType03 solid 1px;
+		margin-bottom:0.5em;
+		@include s.media(m){
+			padding:3.7em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	p{
+		text-align:center;
+		font-family: 'Zen Kaku Gothic New', sans-serif;
+		font-weight:500;
+		font-size:1.1em;
+		color:s.$colorType03;
+		@include s.media(m){
+			font-size:1.75em;
+		}
+	}
+}
+
+
+#wrapper .productBrandBox{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	&__inner{
+		width:50%;
+		padding:0 0.7em;
+		margin-bottom:1.5em;
+		@include s.media(m){
+			padding:0 1.2em;
+			margin-bottom:3em;
+			width:33.3%;
+		}
+		a{
+			display:block;
+			opacity:1;
+			&:hover{
+				opacity:.5;
+			}
+		}
+	}
+	&__image{
+		background:#FFF;
+		display:block;
+		margin-bottom:0.5em;
+		border:s.$colorType03 solid 1px;
+		img{
+			width:100%;
+		}
+	}
+	p{
+		text-align:center;
+		font-family: 'Zen Kaku Gothic New', sans-serif;
+		font-weight:500;
+		font-size:1.1em;
+		color:s.$colorType03;
+		@include s.media(m){
+			font-size:1.75em;
+		}
+	}
+}
+
+
+
+
+#wrapper .cosmeticItemBox{
+	display:block;
+	margin-bottom:2em;
+	padding:2em;
+	border:s.$colorType07 solid 1px;
+	a{
+		pointer-events: none;
+	}
+	&__title{
+		color:#b09f76;
+	    	border:#b09f76 solid 2px;
+		border-radius: 1.1em;
+		vertical-align: bottom;;
+		display:inline-block;
+		line-height: 1.2;
+		padding: 0.7em 1em 0.7em 1.6em;
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 500;
+		letter-spacing:0.1em;
+		font-size:1.1em;
+		margin-bottom:s.$spaceSize;
+		position:relative;
+		@include s.media(m){
+			font-size:1.25em;
+			border-radius: 1.4em;
+			margin-bottom:s.$spaceSize*1.5;
+		}
+	}
+	&__inner{
+		display:block;
+		@include s.media(m){
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+		}
+	}
+	&__image{
+		display:block;
+		margin-bottom:1.5em;
+		@include s.media(m){
+			width:40%;
+			margin-bottom:0;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__content{
+		display:block;
+		@include s.media(m){
+			width:55%;
+		}
+		 table{
+			width:100%;
+			border-collapse: separate;
+			border-top:solid 1px #ccc;
+			border-left:solid 1px #ccc;
+			th{
+				border-bottom:solid 1px #ccc;
+				border-right:solid 1px #ccc;
+    				color: #224c64;
+    				padding:0.7em 1em;
+				width:30%;
+				background:#f2efea;
+			}
+			td{
+				border-bottom:solid 1px #ccc;
+				border-right:solid 1px #ccc;
+				padding:0.7em 1em;
+				background:#FFF;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

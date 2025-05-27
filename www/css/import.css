@@ -1993,6 +1993,24 @@ _:lang(x) + _:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
   .globalNavi {
     position: relative;
   }
+  .globalNavi.--naviType01 .globalNavi__menu__main > li:nth-child(1) {
+    width: 18%;
+  }
+  .globalNavi.--naviType01 .globalNavi__menu__main > li:nth-child(4) {
+    width: 7%;
+  }
+  .globalNavi.--naviType01 .globalNavi__menu__main > li:nth-child(5) {
+    width: 9%;
+  }
+  .globalNavi.--naviType01 .globalNavi__menu__main > li:nth-child(6) {
+    width: 10%;
+  }
+  .globalNavi.--naviType01 .globalNavi__menu__main > li:nth-child(7) {
+    width: 15%;
+  }
+  .globalNavi.--naviType01 .globalNavi__menu__main > li:nth-child(8) {
+    width: 12%;
+  }
   .globalNavi__menu__main > li {
     width: 168px;
     width: 14.2%;
@@ -2006,7 +2024,7 @@ _:lang(x) + _:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
   }
   .globalNavi__menu__main > li a small {
     text-align: center;
-    font-size: 0.65em;
+    font-size: 0.8em;
     display: block;
   }
   .globalNavi__menu__main > li:nth-child(1) {
